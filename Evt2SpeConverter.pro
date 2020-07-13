@@ -1,5 +1,7 @@
 TEMPLATE = subdirs
-
-SUBDIRS += \
+CONFIG += ordered
+SUBDIRS +=  src/ZWinPathValidator \
     src/Evt2SpeContextConverter \
-    test/Evt2SpeConverterTest
+    src/Evt2SpeContextSettings \
+    test/EvtSpectrumDataExtractorTest
+

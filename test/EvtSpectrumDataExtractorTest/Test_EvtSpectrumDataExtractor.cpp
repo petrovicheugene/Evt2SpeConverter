@@ -4,25 +4,25 @@
 #include <QtTest>
 //==========================================================
 // add necessary includes here
-#include "ZEvt2SpeDataConverter.h"
+#include "ZEvtSpectrumDataExtractor.h"
 //==========================================================
-class Test_evt2speDataConverter : public QObject
+class Test_EvtSpectrumDataExtractor : public QObject
 {
     Q_OBJECT
 
 public:
-    Test_evt2speDataConverter();
-    ~Test_evt2speDataConverter();
+    Test_EvtSpectrumDataExtractor();
+    ~Test_EvtSpectrumDataExtractor();
 
 private slots:
     void zp_convert();
 };
 //==========================================================
-Test_evt2speDataConverter::Test_evt2speDataConverter() {}
+Test_EvtSpectrumDataExtractor::Test_EvtSpectrumDataExtractor() {}
 //==========================================================
-Test_evt2speDataConverter::~Test_evt2speDataConverter() {}
+Test_EvtSpectrumDataExtractor::~Test_EvtSpectrumDataExtractor() {}
 //==========================================================
-void Test_evt2speDataConverter::zp_convert()
+void Test_EvtSpectrumDataExtractor::zp_convert()
 {
     char data[] = {0x03,
                    0x00,
@@ -44,14 +44,7 @@ void Test_evt2speDataConverter::zp_convert()
     QDataStream stream(dataByteArray);
     stream.setByteOrder(QDataStream::LittleEndian);
 
-    //    qint32 buffer = 0x00000000;
-    //    for (int i = 0; i < dataByteArray.size(); ++i)
-    //    {
-    //        stream >> buffer;
-    //        qDebug() << buffer;
-    //    }
-
-    ZEvt2SpeDataConverter converter;
+    ZEvtSpectrumDataExtractor converter;
     QStringList speData;
     converter.zp_setByteOrder(QDataStream::LittleEndian);
     converter.zp_setChannelCountShift(0);
@@ -65,6 +58,6 @@ void Test_evt2speDataConverter::zp_convert()
     QCOMPARE(speData, sample);
 }
 //==========================================================
-QTEST_MAIN(Test_evt2speDataConverter)
+QTEST_MAIN(Test_EvtSpectrumDataExtractor)
 
-#include "tst_evt2spedataconverter.moc"
+#include "Test_EvtSpectrumDataExtractor.moc"

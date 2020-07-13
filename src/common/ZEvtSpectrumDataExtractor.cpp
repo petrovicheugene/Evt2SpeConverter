@@ -1,26 +1,18 @@
 //==========================================================
-#include "ZEvt2SpeDataConverter.h"
+#include "ZEvtSpectrumDataExtractor.h"
 #include <QMessageBox>
 //==========================================================
-ZEvt2SpeDataConverter::ZEvt2SpeDataConverter(QObject* parent) : QObject(parent)
+ZEvtSpectrumDataExtractor::ZEvtSpectrumDataExtractor(QObject* parent)
+    : QObject(parent)
 {
     zv_channelCountSift = 0x100; // 256 byte
     zv_byteOrder = QDataStream::LittleEndian;
-    zv_speHeaderLineNumber = 20;
     zv_fillerString += "\n";
 }
 //==========================================================
-bool ZEvt2SpeDataConverter::zp_convert(QDataStream& dataStream,
-                                       QStringList& speStringList)
+bool ZEvtSpectrumDataExtractor::zp_convert(QDataStream& dataStream,
+                                           QStringList& speStringList)
 {
-    // write spe header
-    speStringList << "Converted from .evt\n";
-
-    for (int i = 1; i < zv_speHeaderLineNumber; ++i)
-    {
-        speStringList << zv_fillerString;
-    }
-
     // adjust data stream
     dataStream.setByteOrder(zv_byteOrder);
     dataStream.skipRawData(zv_channelCountSift);
@@ -40,17 +32,17 @@ bool ZEvt2SpeDataConverter::zp_convert(QDataStream& dataStream,
     return true;
 }
 //==========================================================
-void ZEvt2SpeDataConverter::zp_setByteOrder(QDataStream::ByteOrder byteOrder)
+void ZEvtSpectrumDataExtractor::zp_setByteOrder(QDataStream::ByteOrder byteOrder)
 {
     zv_byteOrder = byteOrder;
 }
 //==========================================================
-void ZEvt2SpeDataConverter::zp_setChannelCountShift(CHANNEL_COUNT_UNIT shift)
+void ZEvtSpectrumDataExtractor::zp_setChannelCountShift(CHANNEL_COUNT_UNIT shift)
 {
     zv_channelCountSift = shift;
 }
 //==========================================================
-void ZEvt2SpeDataConverter::zp_setFillerString(const QString& fillerString)
+void ZEvtSpectrumDataExtractor::zp_setFillerString(const QString& fillerString)
 {
     zv_fillerString = fillerString;
     if (!zv_fillerString.endsWith("\n"))
