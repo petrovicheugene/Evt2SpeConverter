@@ -1,0 +1,7 @@
+add to registry a new key:
+Computer\HKEY_CLASSES_ROOT\evtfile\Shell\Evt2Spe
+with
+(Default) val - context menu string (Convert to .SPE)
+
+Create new subkey "command" with 
+(Default) val - "C:\Program Files\Notepad++\notepad++.exe" "%1"
