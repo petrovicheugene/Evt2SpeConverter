@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
     QCommandLineParser parser;
     parser.process(a);
 
-    ZEvt2SpeConverter converter(new ZEvt2SpeDataConverter);
+    ZEvt2SpeConverter converter(new ZEvtSpectrumDataExtractor);
     converter.zp_convertFiles(parser.positionalArguments());
 
     return 0;

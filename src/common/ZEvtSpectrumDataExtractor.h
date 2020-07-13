@@ -5,12 +5,12 @@
 #include <QDataStream>
 #include <QObject>
 //==========================================================
-class ZEvt2SpeDataConverter : public QObject
+class ZEvtSpectrumDataExtractor : public QObject
 {
     Q_OBJECT
 public:
     typedef qint64 CHANNEL_COUNT_UNIT;
-    explicit ZEvt2SpeDataConverter(QObject* parent = nullptr);
+    explicit ZEvtSpectrumDataExtractor(QObject* parent = nullptr);
 
     bool zp_convert(QDataStream& srcByteArray, QStringList& speStringList);
     void zp_setByteOrder(QDataStream::ByteOrder byteOrder);
@@ -23,7 +23,6 @@ private:
     // VARS
     CHANNEL_COUNT_UNIT zv_channelCountSift;
     QDataStream::ByteOrder zv_byteOrder;
-    int zv_speHeaderLineNumber;
     QString zv_fillerString;
     // FUNCS
 };

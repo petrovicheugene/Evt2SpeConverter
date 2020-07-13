@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>e2s-1.ico</file>
+    </qresource>
+</RCC>
