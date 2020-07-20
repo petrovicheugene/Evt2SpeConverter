@@ -5,6 +5,7 @@
 #include <QObject>
 
 #include <QApplication>
+#include <QDir>
 #include <QMap>
 #include <QSettings>
 //================================================
@@ -13,9 +14,10 @@ class ZTranslatorManager : public QObject
     Q_OBJECT
 public:
     explicit ZTranslatorManager(QObject* parent = nullptr,
-            QString  resoucesTranslatorDirName = ":translators",
-                              QString internalTranslatorDir = qApp->applicationDirPath(),
-                              QString prefix = "_");
+                                QString resoucesTranslatorDirName = ":translations",
+                                QString internalTranslatorDir
+                                = QDir(qApp->applicationDirPath()).absoluteFilePath("translations"),
+                                QString prefix = "_");
 
     bool zp_installTranslatorsToApplication();
     QString zp_lastError() const;
@@ -23,7 +25,6 @@ public:
     QString zp_resourcesTranslatorDirName() const;
     QString internalTranslatorDir() const;
     QString prefix() const;
-
 
 public slots:
 

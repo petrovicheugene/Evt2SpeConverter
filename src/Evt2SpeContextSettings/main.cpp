@@ -172,8 +172,8 @@ int main(int argc, char* argv[])
     qApp->setProperty("appDescription", QString(APP_DESCRIPTION));
 #endif
 
-    //ZTranslatorManager languageManager;
-    //languageManager.zp_installTranslatorsToApplication();
+    ZTranslatorManager languageManager;
+    languageManager.zp_installTranslatorsToApplication();
 
     // set dots on the splitter handle
     qApp->setStyleSheet("QSplitter::handle:vertical {height: 4px; image: "

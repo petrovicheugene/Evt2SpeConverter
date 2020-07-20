@@ -16,10 +16,6 @@ QMAKE_TARGET_COMPANY="TechnoAnalyt"
 QMAKE_TARGET_COPYRIGHT="Copyright © $${QMAKE_TARGET_COMPANY} Ltd. 2020.  All rights reserved."
 COMPANY_URL=tehnoanalit.com
 
-LANGUAGES += en \
-ru\
-kk
-
 #-------------------------------------------------
 # in common.pri will be defined VERSION, TARGET, DEBUG SETTINGS
 #  global APP DEFINES

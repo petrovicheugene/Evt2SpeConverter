@@ -4,10 +4,6 @@
 <context>
     <name>ZEvt2SpeConverter</name>
     <message>
-        <source>Cannot convert file &quot;%1&quot;. Error: &quot;%2&quot;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Evt2Spe error</source>
         <translation type="unfinished"></translation>
     </message>
@@ -16,12 +12,35 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cannot open file &quot;%1&quot;!
-The error is: &quot;%2&quot;.</source>
+        <source>The file &quot;%1&quot; is empty!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The file &quot;%1&quot; is empty!</source>
+        <source>Cannot convert file &quot;%1&quot;. %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>
+Do you want to continue?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot open source file &quot;%1&quot; with error: %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot open target file &quot;%1&quot; with error: %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ZVariableManager</name>
+    <message>
+        <source>Wrong variable &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The wrong variable defining &quot;%1&quot;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
