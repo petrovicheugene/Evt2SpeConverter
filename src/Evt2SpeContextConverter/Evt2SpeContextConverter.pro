@@ -7,7 +7,7 @@ TARGET = evt2spe
 #RC_ICONS = "ZImages/SRVLab-8.ico"
 CONFIG += c++11
 VER_MAJ=2
-VER_MIN=0
+VER_MIN=1
 VER_PAT=0
 
 QMAKE_TARGET_PRODUCT="Evt2Spe"
