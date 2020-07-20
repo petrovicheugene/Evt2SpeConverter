@@ -9,7 +9,7 @@ TARGET = evt2speSettings
 RC_ICONS = "e2s-1.ico"
 
 VER_MAJ=1
-VER_MIN=0
+VER_MIN=1
 VER_PAT=0
 
 QMAKE_TARGET_PRODUCT="Evt2Spe Context Settings"
