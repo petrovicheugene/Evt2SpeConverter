@@ -9,7 +9,7 @@ TARGET = evt2speSettings
 RC_ICONS = "e2s-1.ico"
 
 VER_MAJ=1
-VER_MIN=0
+VER_MIN=1
 VER_PAT=0
 
 QMAKE_TARGET_PRODUCT="Evt2Spe Context Settings"
@@ -17,9 +17,8 @@ QMAKE_TARGET_DESCRIPTION="Settings manager for evt2spe application"
 QMAKE_TARGET_COMPANY="TechnoAnalyt"
 QMAKE_TARGET_COPYRIGHT="Copyright © $${QMAKE_TARGET_COMPANY} Ltd. 2020.  All rights reserved."
 COMPANY_URL=tehnoanalit.com
-LANGUAGES += en \
-    ru \
-    kk
+
+
 #-------------------------------------------------
 # in common.pri will be defined VERSION, TARGET, DEBUG SETTINGS
 #  global APP DEFINES

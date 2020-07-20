@@ -1,4 +1,8 @@
 #------------------------------------------------- 
+LANGUAGES += en \
+ru\
+kk
+
 PROJECT_ROOT_PATH = $${PWD}
 win32: {OS_SUFFIX = win_$${QT_ARCH}}
 linux:!android: {OS_SUFFIX = linux_$${QT_ARCH}}
@@ -144,7 +148,7 @@ defineTest(preCopyFiles) {
     export(QMAKE_PRE_LINK)
 }
 
-defined(LANGUAGES){
+!isEmpty(LANGUAGES){
 TRANSLATIONS = $$prependAll(LANGUAGES, $${TRANSLATIONS_PATH}/$${TARGET}_, .ts)
 QMAKE_PRE_LINK += $$(QTDIR)/bin/lupdate-pro $${_PRO_FILE_}
 

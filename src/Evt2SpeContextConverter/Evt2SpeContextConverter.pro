@@ -7,7 +7,7 @@ TARGET = evt2spe
 #RC_ICONS = "ZImages/SRVLab-8.ico"
 CONFIG += c++11
 VER_MAJ=2
-VER_MIN=0
+VER_MIN=1
 VER_PAT=0
 
 QMAKE_TARGET_PRODUCT="Evt2Spe"
@@ -15,10 +15,6 @@ QMAKE_TARGET_DESCRIPTION="Evt to spe converter"
 QMAKE_TARGET_COMPANY="TechnoAnalyt"
 QMAKE_TARGET_COPYRIGHT="Copyright © $${QMAKE_TARGET_COMPANY} Ltd. 2020.  All rights reserved."
 COMPANY_URL=tehnoanalit.com
-
-LANGUAGES += en \
-ru\
-kk
 
 #-------------------------------------------------
 # in common.pri will be defined VERSION, TARGET, DEBUG SETTINGS

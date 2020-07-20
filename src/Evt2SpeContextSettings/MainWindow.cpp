@@ -2,6 +2,7 @@
 #include "MainWindow.h"
 #include "ZEvt2SpeSettingsWidget.h"
 #include <QApplication>
+#include <QMenuBar>
 #include <QStatusBar>
 //==========================================================
 MainWindow::MainWindow(QWidget* parent) : ZBaseMainWindow(parent)
@@ -22,6 +23,7 @@ void MainWindow::zh_createComponents()
 {
     zv_evt2SpeSettingsWidget = new ZEvt2SpeSettingsWidget;
     setCentralWidget(zv_evt2SpeSettingsWidget);
+    // menuBar()->addMenu(zv_languageMenu);
     statusBar();
 }
 //==========================================================

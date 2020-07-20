@@ -19,7 +19,7 @@
 #define MyAppShortPublisher "TechnoAnalyt"
 #define MyAppURL "http://tehnoanalit.com/"
 
-#define QtVersion "5.14.1"
+#define QtVersion "5.15.0"
 
 #define SourceFolder "D:\QtProjects\Evt2SpeConverter\bin\evt2spe_win_x86_64_release\" 
 #define InnoSetupFolder "D:\QtProjects\Evt2SpeConverter\src\Evt2SpeContextConverter\InnoSetup\" 
