@@ -1,0 +1,27 @@
+var class_z_translator_manager =
+[
+    [ "ZTranslatorManager", "class_z_translator_manager.html#a409f9d4a1e6987f12cb277417b7aebc7", null ],
+    [ "internalTranslatorDir", "class_z_translator_manager.html#a396797cf64c619ce27c8f35706630a71", null ],
+    [ "prefix", "class_z_translator_manager.html#a5dc2dca53b868f1383b33995216a6a58", null ],
+    [ "zh_closeSettings", "class_z_translator_manager.html#a4a23a454c2f9a696a7018420dfb5ef1e", null ],
+    [ "zh_createAvailableLocaleList", "class_z_translator_manager.html#a403868a9f706011e9ce6bc08fc8c5bc9", null ],
+    [ "zh_getApplicationLocale", "class_z_translator_manager.html#a7443aa800d6acac512f01c25787df315", null ],
+    [ "zh_getApplicationLocaleFromSettings", "class_z_translator_manager.html#ae91a97e10267f04ff5fafce0ee2011b3", null ],
+    [ "zh_localeNameForTranslator", "class_z_translator_manager.html#abf7b996a2715166f73b7f0a032f18787", null ],
+    [ "zh_nativeLanguageNameForTranslatorFile", "class_z_translator_manager.html#ac3533c28a27d525d3b4ef98ab72ff115", null ],
+    [ "zh_openSettings", "class_z_translator_manager.html#a685fc61e6cd24e3cf2ae1f0082e75502", null ],
+    [ "zh_setErrorMessage", "class_z_translator_manager.html#a61912f8f60b0059335010b0a030aa930", null ],
+    [ "zp_availableLanguageNameList", "class_z_translator_manager.html#acfe193e913c2811182ab1868f32bbc2b", null ],
+    [ "zp_currentLanguageName", "class_z_translator_manager.html#ab9107a60de8c6308351e602d8762d752", null ],
+    [ "zp_currentLocaleName", "class_z_translator_manager.html#a1c254742e2c52af527b7315009cacfec", null ],
+    [ "zp_installTranslatorsToApplication", "class_z_translator_manager.html#ada5eef46548361ca1701e06161bdaa48", null ],
+    [ "zp_lastError", "class_z_translator_manager.html#aa67d018a490878ffaa7cc50b3eed2aad", null ],
+    [ "zp_resourcesTranslatorDirName", "class_z_translator_manager.html#a45b8ced07ce75831162ebbbb5ceba504", null ],
+    [ "zp_setApplicationLanguage", "class_z_translator_manager.html#a8bfb8ed670d01dbd932737504eb7c54e", null ],
+    [ "zv_appLanguageSettingsName", "class_z_translator_manager.html#a0bfc713435dbd2d3bcbb8522732ccf49", null ],
+    [ "zv_availableLocaleList", "class_z_translator_manager.html#a1f887be9dc0138841d294f714ce350e5", null ],
+    [ "zv_errorMessage", "class_z_translator_manager.html#a81ec9caac71f2b2fd41ffc32de45fbb8", null ],
+    [ "zv_internalTranslatorDir", "class_z_translator_manager.html#ae3c1dcba1c2c012b793a4db7195db8f5", null ],
+    [ "zv_prefix", "class_z_translator_manager.html#a932c99472469a2105a7df925b8990300", null ],
+    [ "zv_resoucesTranslatorDirName", "class_z_translator_manager.html#a95d4b29c04bc0f64839a37712cac6496", null ]
+];
